@@ -1,0 +1,89 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<title>Formular</title>
+<link rel = "stylesheet" type = "text/css" href = "../css/style.css">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+<h1>Codifun inspires me!!</h1>
+
+<p><i>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. 
+Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, 
+când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o 
+carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, 
+dar şi a facut saltul în tipografia electronică practic neschimbată. 
+A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, 
+iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau 
+versiuni de Lorem Ipsum.</i></p>
+</header>
+
+<nav>
+<a href = "../index_6.html">Acasa</a>
+<a href = "curiozitati.html">Curiozitati</a>
+<a href = "adresa.html">Contacte</a>
+<a href = "formular.html">Completeaza Formular</a>
+</nav>
+<section>
+<h2 style = "text-align: center;">Formular cu date Personale &#x2663</h2>
+<div align = "center">
+<canvas id = "myCanvas" width = "300px" height = "80px" style = "border:2px solid #a7a3a3;">
+</canvas>
+</div>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "25px Arial";
+ctx.fillText("Hello World!",75,45);
+</script>
+
+<h4 style="display:inline"> Click pentru a reveni
+<a href="../index_6.html">
+<svg width = "50px" height = "50px"> <circle cx="25px" cy="25px" r="20px" stroke="green" stroke-width="4px" fill="yellow" /> 
+</svg>
+</a>
+</h4>
+<br><br>
+<form action = "www.example.html" method = "post">
+Nume: <br>
+<input type = "text" name = "nume"> <br> <br>
+Prenume: <br>
+<input type = "text" name = "prenume"> <br> <br>
+Date nasterii: <br>
+<input type = "date" name = "date"> <br> <br>
+Tara de origine: <br>
+<select name = "tara">
+<option value = "moldova">Rep.Moldova</option>
+<option value = "romania">Romania</option>
+<option value = "russia">Russia</option>
+</select><br> <br>
+Interese: <br>
+<input type="checkbox" name="interes1" value="HTML"> HTML <br>
+<input type="checkbox" name="interes2" value="Javascript"> Javascript <br>
+<input type="checkbox" name="interes3" value="PHP"> PHP <br>
+<input type="checkbox" name="interes4" value="CSS"> CSS <br> <br>
+Adresa de email:<br>
+<input type = "text" name = "email"> <br> <br>
+Parola:<br>
+<input type = "Password" name = "pass"> <br> <br>
+Cat de des doriti sa primiti notificari pe adresa de e-mail?<br>
+<input type="radio" id = "sapt" name="notif" value="Saptamanal"> Saptamanal <br>
+<input type="radio" id = "lun" name="notif" value="Lunar"> Lunar <br>
+<input type="radio" id = "nic" name="notif" value="Niciodata"> Niciodata <br> <br>
+Parerea Dvs despre Codifun:<br>
+<textarea name = "message" rows = "8" cols = "50"></textarea>
+<br> <br>
+<input type = "submit" name = "trimite" value = "Trimite">
+</form>
+</section>
+
+<footer>
+ <h3 id = "demo" align = "center" </h3>
+ <script>
+ document.getElementById("demo").innerHTML = "Cunostintele iti creeaza viitorul!!";
+ </script>
+</footer>
+</body>
+</html>
